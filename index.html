@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Optical - Customer Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shivam Optical</h1>
+            <h2>Customer Management System</h2>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search customers...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div class="customer-form">
+            <div class="form-header">
+                <h3>Customer Data</h3>
+                <div class="date-container">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+                </div>
+            </div>
+
+            <div class="customer-info">
+                <div class="form-row">
+                    <label for="customerName">Name:</label>
+                    <input type="text" id="customerName">
+                </div>
+                <div class="form-row">
+                    <label for="phoneNumber">Phone No:</label>
+                    <input type="tel" id="phoneNumber">
+                </div>
+            </div>
+
+            <div class="prescription-container">
+                <table class="prescription-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Right Eye (R.E)</th>
+                            <th>Left Eye (L.E)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SPH</td>
+                            <td><input type="text" id="rightSph"></td>
+                            <td><input type="text" id="leftSph"></td>
+                        </tr>
+                        <tr>
+                            <td>CYL</td>
+                            <td><input type="text" id="rightCyl"></td>
+                            <td><input type="text" id="leftCyl"></td>
+                        </tr>
+                        <tr>
+                            <td>AXE</td>
+                            <td><input type="text" id="rightAxe"></td>
+                            <td><input type="text" id="leftAxe"></td>
+                        </tr>
+                        <tr>
+                            <td>Add</td>
+                            <td><input type="text" id="rightAdd"></td>
+                            <td><input type="text" id="leftAdd"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="product-info">
+                <div class="form-row">
+                    <label for="frameName">Frame Name:</label>
+                    <input type="text" id="frameName">
+                </div>
+                <div class="form-row">
+                    <label for="lensName">Lens Name:</label>
+                    <input type="text" id="lensName">
+                </div>
+            </div>
+
+            <div class="cost-container">
+                <div class="form-row">
+                    <label for="frameCost">Frame Cost:</label>
+                    <input type="number" id="frameCost" onchange="calculateTotal()">
+                </div>
+                <div class="form-row">
+                    <label for="lensCost">Lens Cost:</label>
+                    <input type="number" id="lensCost" onchange="calculateTotal()">
+                </div>
+                <div class="form-row">
+                    <label for="totalCost">Total:</label>
+                    <input type="number" id="totalCost" readonly>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="saveButton">Save Customer</button>
+                <button id="clearButton">Clear Form</button>
+            </div>
+        </div>
+
+        <div class="customer-list-container">
+            <h3>Customer Records</h3>
+            <div id="customerList" class="customer-list">
+                <!-- Customer records will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

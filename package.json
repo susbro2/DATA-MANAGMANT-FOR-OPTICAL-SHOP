@@ -1,0 +1,44 @@
+{
+  "name": "shivam-optical-management",
+  "version": "1.0.0",
+  "description": "Customer management system for optical shop",
+  "main": "electron.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "electron": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.shivamoptical.customerapp",
+    "productName": "Shivam Opticals",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": ["nsis"],
+      "icon": "icon.ico"
+    },
+    "mac": {
+      "target": ["dmg"],
+      "icon": "icon.icns"
+    },
+    "linux": {
+      "target": ["AppImage"],
+      "icon": "icon.png"
+    }
+  }
+} 
