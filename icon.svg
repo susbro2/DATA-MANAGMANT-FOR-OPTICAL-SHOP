@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="50" fill="#3498db"/>
+  <circle cx="200" cy="256" r="100" fill="none" stroke="white" stroke-width="20"/>
+  <circle cx="312" cy="256" r="100" fill="none" stroke="white" stroke-width="20"/>
+  <line x1="200" y1="186" x2="312" y2="186" stroke="white" stroke-width="10"/>
+  <line x1="200" y1="326" x2="312" y2="326" stroke="white" stroke-width="10"/>
+  <text x="256" y="420" font-family="Arial" font-size="48" text-anchor="middle" fill="white">Shivam</text>
+</svg> 
