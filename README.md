@@ -1,4 +1,3 @@
-# DATA-MANAGMANT-FOR-OPTICAL-SHOP
 # Shivam Opticals
 
 A lightweight Python desktop application for managing customer data at an optical shop. This application allows you to store customer information, prescriptions, frame and lens details, and costs.
@@ -81,4 +80,4 @@ This software is provided as-is, with no warranties expressed or implied.
 
 ---
 
-Developed for Shivam Optical | 2025
+Developed for Shivam Optical | 2023 
